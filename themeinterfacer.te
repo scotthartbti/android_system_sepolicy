@@ -63,7 +63,7 @@ allow themeinterfacer network_management_service:service_manager find;
 allow themeinterfacer overlay_service:service_manager find;
 
 # Allow file and type transition for contexts
-type_transition themeinterfacer system_data_file:file theme_data_file "theme";
-type_transition themeinterfacer system_data_file:dir theme_data_file;
-file_type_auto_trans(themeinterfacer, system_data_file, theme_data_file);
+type_transition interfacer system_data_file:file theme_data_file "theme";
+type_transition interfacer system_data_file:dir theme_data_file;
+file_type_auto_trans(interfacer, system_data_file, theme_data_file);
 
